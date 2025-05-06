@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    /* padding: 0; */
+    font-weight: 400;
+    list-style-type: none;
+    font-size: 24px;
+}
+
+section > header > h2{
+    color: greenyellow;
+}
+
+
+section h2{
+    font-size: 30px;
+    font-weight: 700;
+    font-weight: 400;
+    color: blue;
+}
+
+section > h2{
+    color: tomato;
+}
+
+h2{
+    color: red;
+}
+
+h2 ~ p{
+    background-color: #777
+}
+
+h2 + p{
+    background-color: #ccc
+}
+
+p::first-letter{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ul::selection{
+    color: green;
+    background-color: rgb(13, 8, 8);
+}
+
+h2:hover::before{
+    content: "Club Name:";
+    color: blue;
+}
+
+
+header.mine{
+    border-block-end: 5px solid blue;
+}
+
+.mine li{
+    border-block: 5px solid rgb(238, 164, 4);
+    
+}
+
+.gee{
+    border-inline: 15px dashed blue;
+}
+
+section:nth-of-type(3) li:first-of-type{
+    border-inline: 5px dashed rgb(250, 11, 170);
+    padding-block: 10px;
+}
+
+.yours.mine{
+    border-block: 5px double blue;
+}
